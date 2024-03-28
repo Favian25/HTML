@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        fieldset {
+          background-color: #fee6a8;
+          margin : 50px;
+        }
+            
+        legend {
+          background-color: #888888;
+          color: white;
+          padding: 5px 10px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin: auto;
+        }
+
+        textarea {
+            vertical-align: middle;
+        }
+
+        .titik {
+            display: inline;
+        }
+
+        .tombol {
+            margin-left: 135px;
+        }
+    </style>
+    <title>Form Biodata</title>
+</head>
+    <body>
+        <fieldset>
+            <legend>Biodata</legend>
+            <form action="">
+                <label for="nama" >Nama </label>
+                <label class="titik">:</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama legkap anda"><br><br>
+            
+                <label for="alamat">Alamat</label>
+                <label class="titik">:</label>
+                <textarea name="alamat" id="alamat" placeholder="Masukkan alamat lengkap anda" cols="40" rows="4"></textarea><br><br>
+                
+                <label for="ttl">TTL</label>
+                <label class="titik">:</label>
+                <input type="text" name="ttl" id="ttl" placeholder="Tempat lahir anda">
+                <input type="date"><br><br>
+                
+                <label for="gender">Jenis Kelamin</label>
+                <label class="titik">:</label>
+                <input type="radio" id="cowok" name="gender">
+                <label for="cowok">Laki-laki</label>
+                <input type="radio" id="cewek" name="gender">
+                <label for="cewek">Perempuan</label><br><br>
+
+                <label for="agama">Agama</label>
+                <label class="titik">:</label>
+                <select name="agama" id="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Katholik">Katholik</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Kong Hu Chu">Kong Hu Chu</option>
+                </select><br><br>
+
+                <label for=" ">Hobby</label>
+                <label class="titik">:</label>
+                <input type="checkbox" id="melukis" name="hobi">
+                <label for="melukis">Melukis</label>
+                <input type="checkbox" id="musik" name="hobi">
+                <label for="musik">Musik</label>
+                <input type="checkbox" id="gaming" name="hobi">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="berenang" name="hobi" checked>
+                <label for="berenang">Berenang</label>
+                <input type="checkbox" id="membaca" name="hobi">
+                <label for="membaca">Membaca</label><br><br>
+
+                <label for="motto">Motto</label>
+                <label class="titik">:</label>
+                <textarea name="motto" id="motto" cols="40" rows="4"></textarea><br><br>
+
+                <input class="tombol" type="reset" value="Reset">
+                <input type="button" value="Simpan">
+            </form>
+        </fieldset>
+    </body>
+</html>
